@@ -92,10 +92,10 @@ day = (date.strftime("%A"))
 
 # iniciar bot y cuenta de IG
 bot = Bot()
-bot.login(username="xxxx", password="xxxx")
+bot.login(username="ivaninthemusic", password="cuentainstagram123")
 
 # ruta de acceso al archivo
-file_path = "/Users/dsalzedo/Documents/Python/PyInsta/ivaninthemusic/photonum.txt"
+file_path = "/home/dsalzedon/ivaninthemusic/photonum.txt"
 
 # abrir archivo de texto
 file_txt = open(file_path, "rt")
@@ -126,7 +126,7 @@ if day == "Friday":
     rw_txt()
 
 # ruta de acceso a las fotos y subir caption y hashtags
-bot.upload_photo("/Users/dsalzedo/Documents/Python/PyInsta/ivaninthemusic/{}/{}.jpg".format(day, num),
+bot.upload_photo("/home/dsalzedon/ivaninthemusic/{}/{}.jpg".format(day, num),
                  caption="{} at Dakota Studio Bar. Shot with a Sony a6000 and a Tamron 70-200mm 2.8.".format(
                      cap) + '\n' + '.\n'
                  + '.\n' + '.\n'
