@@ -1,5 +1,8 @@
 """
 Adding white border, from "service menu" on apple or as a "other app" in capture one
+On automator,
+shell: bin/bass         pass input: as argument
+/usr/local/bin/python3 <python script path> "$1"
 """
 
 import os
