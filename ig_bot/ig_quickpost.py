@@ -1,6 +1,11 @@
 """
 ESTE PROGRAMA ES SOLO PARA SUBIR RAPIDAMENTE UNA FOTO
 UNO DANDO EL DIA Y EL NUMERO DE LA FOTO
+
+pip install -U instabot
+git clone https://github.com/instagrambot/instabot --recursive
+cd instabot/examples
+
 """
 
 from instabot import Bot
