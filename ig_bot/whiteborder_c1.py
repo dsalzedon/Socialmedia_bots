@@ -26,4 +26,5 @@ parser = argparse.ArgumentParser()
 parser.add_argument("path", type=str)
 args = parser.parse_args()
 f = args.path
+# border=(left,top,right,buttom)
 add_border(f, f, border=(100, 30))
