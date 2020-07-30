@@ -11,6 +11,10 @@ la primera linea corresponde  a la foto del lunes, la segunda a la del miercoles
 
 El viernes revisa el numero y toma la decisión si subir otra foto del lunes o del miercoles, dependiendo si es par o impar el numero del archivo.
 
+se necesita instalar:
+pip install -U instabot
+git clone https://github.com/instagrambot/instabot --recursive
+cd instabot/examples
 
 # bot_tw
 
