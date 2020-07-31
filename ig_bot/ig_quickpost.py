@@ -6,20 +6,27 @@ pip install -U instabot
 git clone https://github.com/instagrambot/instabot --recursive
 cd instabot/examples
 
+el user id de notivan es 24994235608
 """
 
 from instabot import Bot
 
 bot = Bot()
-bot.login(username="xxx", password="xxx")
+bot.login(username="notivannordan", password="Falcon_12_45")
 
-num = str(1)
 
-day = "Monday"
+txt = "las pruebas como deben de ser"
 
-# ruta de acceso a las fotos y subir caption y hashtags
-bot.upload_photo("/Users/dsalzedo/Documents/Python/pruebas/{}/{}.jpg".format(day, num),
-                 caption="nuevas pruebas nuevas de verdad" + '\n' + '.\n'
-                 + '.\n' + '.\n'
-                 + '.\n' + '.\n'
-                 + "#iconcertphoto #raw_concert #audioloveofficial #livemusiccollective #htbarp #concertjunkie #livemusicphotographer #bestmusicshots #concertphoto #livephotographer #livephotography #musicphotography #tonekillers #AGameofTones #sonyalpha #sonya6000 #tamronlens #mytamronlens #tamron #70200")
+hashtags = ".\n" + ".\n" + ".\n" + ".\n" + ".\n" + ".\n" + \
+    "#pruebas #pruebas2 #pruebas3 #pruebas4"
+
+cap = txt + hashtags
+
+img = "/Users/dsalzedo/Documents/Python/instabot/pic/1.jpg"
+
+
+user_id_1 = 24994235608
+
+tags = [{'user_id': user_id_1, 'x': 0.1, 'y': 0.9}]
+
+bot.upload_photo(img, user_tags=tags, caption=cap)
