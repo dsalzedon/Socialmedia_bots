@@ -12,7 +12,7 @@ el user id de notivan es 24994235608
 from instabot import Bot
 
 bot = Bot()
-bot.login(username="notivannordan", password="Falcon_12_45")
+bot.login(username="xxxx", password="xxxx")
 
 
 txt = "las pruebas como deben de ser"
