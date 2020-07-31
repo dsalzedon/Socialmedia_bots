@@ -92,7 +92,7 @@ day = (date.strftime("%A"))
 
 # iniciar bot y cuenta de IG
 bot = Bot()
-bot.login(username="ivaninthemusic", password="cuentainstagram123")
+bot.login(username="xxxx", password="xxx")
 
 # ruta de acceso al archivo
 file_path = "/home/dsalzedon/ivaninthemusic/photonum.txt"
