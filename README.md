@@ -11,6 +11,15 @@ la primera linea corresponde  a la foto del lunes, la segunda a la del miercoles
 
 El viernes revisa el numero y toma la decisión si subir otra foto del lunes o del miercoles, dependiendo si es par o impar el numero del archivo.
 
+# TODO:
+
+- Databases for pictures in drive
+- Updating database after picture upload
+- user tags
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
 # bot_tw
 
 Twitter bot para subir lineas o pensamientos a twitter
