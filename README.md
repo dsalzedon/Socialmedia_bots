@@ -13,9 +13,9 @@ El viernes revisa el numero y toma la decisión si subir otra foto del lunes o d
 
 ## TODO:
 
--[ ] Databases for pictures in drive
--[ ] Updating database after picture upload
--[ ] user tags
+-[x] Databases for pictures in drive   
+-[ ] Updating database after picture upload   
+-[ ] user tags   
 
 
 ------------------------------------------------------------------------------------------------------------------------------------
