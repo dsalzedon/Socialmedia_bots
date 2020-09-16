@@ -9,6 +9,7 @@ import os
 import argparse
 from sys import argv
 from PIL import Image, ImageOps
+from random import choice
 
 
 def add_border(input_image, output_image, border):
@@ -26,5 +27,11 @@ parser = argparse.ArgumentParser()
 parser.add_argument("path", type=str)
 args = parser.parse_args()
 f = args.path
-# border=(left,top,right,buttom)
-add_border(f, f, border=(100, 30))
+
+# en border_lst cambias los valores para los marcos y puedes añadir más
+border_lst = ["20x60", "45x60", "40x80"]
+
+# escoge un pseudo-aleatorio entre la lista de bordes
+border_select = choice(border_lst).split("x")
+
+add_border(f, f, border=(int(border_select[0]), int(border_select[1])))
