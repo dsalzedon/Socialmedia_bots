@@ -1,4 +1,4 @@
-# IG_BOG
+# IG_BOT
 IG bot for uploading my concert and travel photos to different accounts.   
 
 The script takes the date information, and if it is Monday, Wednesday, Friday or Saturday it changes the caption and hashtags that the photo will have. It access a txt file with 4 lines, each line has a number and the number it reads is the photo it will upload.    
@@ -10,8 +10,10 @@ On Fridays, it selects the number from the first or second line, base on if the 
 
 
 #### White Frame
-Inside the folder there is a script for adding white frames to the pictures, due to fact that **Capture One** doesn't have that feature.   
+Inside the folder there is a script for adding white frames to the pictures, due to fact that **Capture One** doesn't have that feature. 
+
 One script is for making an app with Automator in OSX and the other script is for running it and add white frames to a batch of files in a folder.   
+
 Both scripts, have different border size if the picture is vertical or horizontal.
 
 ## TODO:
