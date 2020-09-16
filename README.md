@@ -22,4 +22,4 @@ Both scripts, have different border size if the picture is vertical or horizonta
 # bot_tw
 
 Twitter bot for uploading some quotes or thoughts.   
-Not need for continuing since Twitter already schedule posts.
+No need for continuing since Twitter already schedule posts.
