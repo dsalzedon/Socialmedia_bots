@@ -1,15 +1,14 @@
 # bot_ig
-IG bot for uploading my concert and travel photos to different accounts.
+IG bot for uploading my concert and travel photos to different accounts.   
 
-Toma la info del día q es.
+The script takes the date information, and if it is Monday, Wednesday, Friday or Saturday it changes the caption and hashtags that the photo will have.   
+It access a txt file with 4 lines, each line has a number and the number it reads is the photo it will upload. Photos should be name like: 1.jpg, 2.jpg, 3.jpg and so on.   
+The first line in the txt file is for Mondays, second for Wednesday, third for Fridays and fourth for Saturdays.   
+On Fridays, it selects a line(from 1-2) base on if the number is odd or even.
 
-Dependiendo si es lunes, miercoles, viernes o sabado cambia el caption de la foto(en un futuro tambien los hastags) y la ruta de acceso de la foto q va a subir.
-
-De un archivo de texto hay 4 lineas, con un numero, este numero es el equivalente a la foto q se va a subir(estan nombradas por numeros).
-
-la primera linea corresponde  a la foto del lunes, la segunda a la del miercoles , la tercera al viernes y la cuarta al sabado.
-
-El viernes revisa el numero y toma la decisión si subir otra foto del lunes o del miercoles, dependiendo si es par o impar el numero del archivo.
+Inside the folder there is a script for adding white frames to the pictures, due to fact that capture one doesn't have that feature.   
+One script is for making an app with Automator in OSX and the other script is for running it and add white frames to a batch of files in a folder.   
+Both scripts, have different border size if the picture is vertical or horizontal.
 
 ## TODO:
 
@@ -22,4 +21,5 @@ El viernes revisa el numero y toma la decisión si subir otra foto del lunes o d
 
 # bot_tw
 
-Twitter bot para subir lineas o pensamientos a twitter
+Twitter bot for uploading some quotes or thoughts.   
+Not need for continuing since Twitter already schedule posts.
