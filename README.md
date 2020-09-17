@@ -16,7 +16,7 @@ One script is for making an app with Automator in OSX and the other script is fo
 
 Both scripts, have different border size if the picture is vertical or horizontal.
 
-## TODO:
+### TODO:
 
 - [ ] Databases for pictures in drive   
 - [ ] Updating database after picture upload   
