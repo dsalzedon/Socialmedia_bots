@@ -19,7 +19,7 @@ Both scripts, have different border size if the picture is vertical or horizonta
 ### TODO:
 
 - [ ] Databases for pictures in drive   
-- [ ] Updating database after picture upload   
+- [ ] Updating database after picture is uploaded   
 - [ ] user tags   
 
 
