@@ -6,9 +6,7 @@ import datetime
 def day_cap():
     global day_num, cap, x
     if day == "Monday":
-        # asignar la linea (0=lunes, 1=miercoles, 2=viernes, 3=sabado)
         day_num = 0
-        # obtener el numero de foto q se va a subir
         day_photo(day_num)
         cap = "Diego Gongora"
 
@@ -20,7 +18,6 @@ def day_cap():
     elif day == "Friday":
         day_num = 2
         day_photo(day_num)
-        # si el numero es par usar fotos del lunes si es impar del miercoles
         if data % 2 == 0:
             x = 0
         else:
@@ -63,30 +60,21 @@ def photo_friday():
 # funcion para convertir los datos y poder usarlos en las formulas
 def rw_data():
     global num, num2
-    # num = el dato que se lee en el archivo
     num = data
-    # num2 es el q va a reemplazar
     num2 = num + 1
-    # convierto a string para remplazar en las formulas
     num, num2 = str(num), str(num2)
 
 
 # funcion para sobreescribir en el archivo los nuevos valores
 def rw_txt():
-    # abrir el archivo en lectura
     file_txt = open(file_path, "r")
-    # leer todas las lineas
     line_to_write = file_txt.readlines()
-    # seleccionar linea para escribir
     line_to_write[day_num] = "{}\n".format(num2)
-    # parametro escribir(write) en el archivo
     file_txt = open(file_path, "w")
-    # sobreescribir en la linea escogida
     file_txt.writelines(line_to_write)
     file_txt.close()
 
 
-# obtener la fecha y obtener el dia de hoy
 date = datetime.datetime.now()
 day = (date.strftime("%A"))
 
@@ -97,13 +85,12 @@ bot.login(username="xxxx", password="xxx")
 # ruta de acceso al archivo
 file_path = "/home/dsalzedon/ivaninthemusic/photonum.txt"
 
-# abrir archivo de texto
 file_txt = open(file_path, "rt")
 
 # seleccionar la foto y el caption segun el dia
 day_cap()
 
-# cerrar el archivo para llevar un orden
+
 file_txt.close()
 
 # darle formato para trabajar con los datos
@@ -114,15 +101,10 @@ rw_txt()
 
 # leer y reemplaar el valor del dia distinto al viernes (i.e. Lunes o Miercoles)
 if day == "Friday":
-    # abrir archivo de texto
     file_txt = open(file_path, "rt")
-    # escoger si subir de lunes o miercoles
     photo_friday()
-    # cerrar archivo de texto
     file_txt.close()
-    # darle formato para trabajar con los datos
     rw_data()
-    # reemplazar los datos en el texto
     rw_txt()
 
 # ruta de acceso a las fotos y subir caption y hashtags
