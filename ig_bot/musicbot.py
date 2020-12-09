@@ -45,11 +45,9 @@ def working():
 # iniciar sesion en ig y abrir el archivo de texto
 def login():
         global file_txt
-        # iniciar bot y cuenta de IG
         bot = Bot()
         bot.login(username="xxx", password="xxxx")
         
-        # abrir archivo de texto
         file_txt = open(file_path, "rt")
 
 
@@ -81,34 +79,24 @@ def day_photo(file_line):
         line_to_read = [file_line]
         for position, line in enumerate(file_txt):
                 if position in line_to_read:
-                        # el valor de a linea q se lee
                         data = int(line)
-        # cerrar el archivo para llevar un orden
         file_txt.close()
 
 
 # convertir los datos  a string  para poder usarlos en las formulas
 def rw_data():
         global num, num2
-        # num = el dato que se lee en el archivo
         num = data
-        # num2 es el q va a reemplazar
         num2 = num + 1
-        # convierto a string para remplazar en las formulas
         num, num2 = str(num), str(num2)
 
 
 # reemplazar los datos en el archivo de texto
 def rw_txt():
-        # abrir el archivo en lectura
         file_txt = open(file_path, "r")
-        # leer todas las lineas
         line_to_write = file_txt.readlines()
-        # seleccionar linea para escribir
         line_to_write[file_line] = "{}\n".format(num2)
-        # parametro escribir(write) en el archivo
         file_txt = open(file_path, "w")
-        # sobreescribir en la linea escogida
         file_txt.writelines(line_to_write)
         file_txt.close()
 
