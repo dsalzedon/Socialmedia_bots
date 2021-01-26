@@ -30,7 +30,7 @@ def caption():
 
 
 def selecting_img():
-    txt_path = "/Users/dsalzedo/Documents/Python/Scripts/Instabot/photonum.txt"
+    txt_path = "/home/dsalzedon/ivaninthemusic/photonum.txt"
 
     with open(txt_path, "r") as file:
         pic_num = str(file.readline())
@@ -39,7 +39,7 @@ def selecting_img():
         pic_num2 = int(pic_num) + 1
         file.write(str(pic_num2))
 
-    return f"/Users/dsalzedo/Documents/Python/Scripts/Instabot/pic/pic{pic_num}.jpg"
+    return f"/home/dsalzedon/ivaninthemusic/pic/pic{pic_num}.jpg"
 
 
 def upload_img():
