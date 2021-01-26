@@ -9,8 +9,6 @@ from instabot import Bot
 import datetime
 
 bot = Bot()
-# bot.login(username="ivaninthemusic", password="cuentainstagram123")
-bot.login(username="notivannordan", password="Falcon_12_45")
 
 
 # CAPTION Y HASHTAGS
@@ -87,10 +85,10 @@ date = datetime.datetime.now()
 day = date.strftime("%A")
 
 if day == "Monday":
-    bot.login(username="ivaninthemusic", password="cuentainstagram123")
+    bot.login(username="xxx", password="xxx")
     upload_img(day)
 elif day == "Tuesday":
-    bot.login(username="ivnavarr", password="Dsalzedo123")
+    bot.login(username="xxx", password="xxx")
     upload_img(day)
 else:
     quit()
