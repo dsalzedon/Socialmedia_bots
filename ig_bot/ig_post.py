@@ -14,7 +14,7 @@ date = datetime.datetime.now()
 day = date.strftime("%A")
 
 
-if day = "Monday":
+if day == "Monday":
     iv_mu.upload_img()
 elif day == "Tuesday":
     iv_ph.upload_img()
